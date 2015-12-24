@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Issue"
+        android:textSize="32sp"
+        android:id="@+id/textView"
+        android:capitalize="words"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textColor="#0000ff"
+        android:textStyle="bold"
+        android:background="#afff0000"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textView"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/textView"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/identify"
+            android:id="@+id/enter_name_title_textView"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:background="#85ffffff"
+            android:padding="8dp"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:editable="true"
+            android:id="@+id/enter_name_editText"
+            android:textSize="24sp"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:layout_weight="2"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/textView"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/reasons"
+                android:id="@+id/enter_reasons_title_textView"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:background="#85ffffff"
+                android:padding="8dp"
+                android:textStyle="bold" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:editable="true"
+                android:id="@+id/enter_reasons_editText"
+                android:textSize="24sp"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:layout_weight="2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/textView"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/objective"
+                android:id="@+id/enter_objective_title_textView"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:background="#85ffffff"
+                android:padding="8dp"
+                android:textStyle="bold" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:editable="true"
+                android:id="@+id/enter_objective_editText"
+                android:textSize="24sp"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:layout_weight="2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/textView"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/action_plan"
+                android:id="@+id/enter_action_plan_title_textView"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:background="#85ffffff"
+                android:padding="8dp"
+                android:textStyle="bold" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:editable="true"
+                android:id="@+id/enter_action_plane_editText"
+                android:textSize="24sp"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:layout_weight="2"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/textView"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/monitor_results"
+                android:id="@+id/enter_results_title_textView"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:background="#85ffffff"
+                android:padding="8dp"
+                android:textStyle="bold" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:editable="true"
+                android:id="@+id/enter_results_editText"
+                android:textSize="24sp"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:layout_weight="2"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/save"
+            android:textSize="24sp"
+            android:id="@+id/save_new_issue_button"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:onClick="saveNewIssue"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

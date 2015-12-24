@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Issue"
+        android:textSize="32sp"
+        android:id="@+id/issueTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:capitalize="words"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textColor="#0000ff"
+        android:textStyle="bold"
+        android:background="#afff0000" />
+    <LinearLayout
+        android:id="@+id/issue_linearLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/issueTitle"
+        android:layout_above="@+id/issue_buttons_linearLayout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/identify"
+                android:id="@+id/indentify_textView"
+                android:textSize="24sp"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp" />
+            <Button
+                android:id="@+id/identify_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="+"
+                android:onClick="createIssueDialog"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/identivy_content_textView"
+            android:paddingLeft="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/reasons"
+                android:id="@+id/reasons_textView"
+                android:textSize="24sp"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp" />
+            <Button
+                android:id="@+id/reasons_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="+"
+                android:onClick="createIssueDialog"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/resons_content_textView"
+            android:paddingLeft="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/objective"
+                android:id="@+id/objective_textView"
+                android:textSize="24sp"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp" />
+            <Button
+                android:id="@+id/objective_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="+"
+                android:onClick="createIssueDialog"/>
+        </LinearLayout>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/objective_content_textView"
+            android:paddingLeft="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/action_plan"
+                android:id="@+id/action_plan_textView"
+                android:textSize="24sp"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp" />
+            <Button
+                android:id="@+id/action_plan_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="+"
+                android:onClick="createIssueDialog"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/actions_content_textView"
+            android:paddingLeft="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/monitor_results"
+                android:id="@+id/monitor_results_textView"
+                android:textSize="24sp"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp" />
+            <Button
+                android:id="@+id/results_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="+"
+                android:onClick="createIssueDialog"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/monitor_content_textView"
+            android:paddingLeft="8dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/issue_buttons_linearLayout"
+        android:layout_above="@+id/issue_progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/save"
+            android:onClick="saveNewIssue"
+            android:textAllCaps="true"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/cancel"
+            android:onClick="exit"
+            android:textAllCaps="true"/>
+    </LinearLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/issue_progressBar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

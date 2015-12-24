@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/action_plan_editText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="summarize the action plan in a few words"
+        android:textSize="24sp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_plan_editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="ok"
+            android:id="@+id/ok_button_action_plan"
+            android:textAllCaps="true" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/cancel_button_action_plan"
+            android:text="@string/cancel"
+            android:textAllCaps="true" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Issue Blazer</string>
+    <string name="cur_issues">Current Issues</string>
+    <string name="new_issues">New Issue</string>
+    <string name="save">Save New Issue</string>
+    <string name="identify">Identify</string>
+    <string name="reasons">Reasons</string>
+    <string name="objective">Objective</string>
+    <string name="action_plan">Action Plan</string>
+    <string name="monitor_results">Results</string>
+    <string name="save_new_issue_field">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok_button">OK</string>
+    <string name="description_optional"><u>Description (Optional)</u></string>
+    <string name="summerize_issue">summarize the issue in a few words</string>
+    <string name="add_reasons">Add reasons below for the issue:</string>
+    <string name="wizard_title_issue">1: Identify Issue</string>
+    <string name="wizard_title_objective">3: Issue Objective</string>
+    <string name="wizard_title_reasons">2: Reasons for Issue</string>
+    <string name="wizard_title_action_plan">4: Action Plan</string>
+    <string name="wizard_title_results">5: Results</string>
+</resources>
